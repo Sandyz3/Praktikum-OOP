@@ -1,7 +1,7 @@
 public class Student extends Person{
-    String program;
-    int year;
-    double fee;
+    private String program;
+    private int year;
+    private double fee;
 
     public Student(String name, String address, String program, int year, double fee) {
         super(name, address);
@@ -11,7 +11,7 @@ public class Student extends Person{
     }
 
     public String getProgram() {
-        return program;
+        return this.program;
     }
 
     public void setProgram(String program) {
@@ -19,7 +19,7 @@ public class Student extends Person{
     }
 
     public int getYear() {
-        return year;
+        return this.year;
     }
 
     public void setYear(int year) {
@@ -27,22 +27,15 @@ public class Student extends Person{
     }
 
     public double getFee() {
-        return fee;
+        return this.fee;
     }
 
     public void setFee(double fee) {
         this.fee = fee;
     }
 
-    @Override
     public String toString() {
-        return "Student{" +
-                "program='" + program + '\'' +
-                ", year=" + year +
-                ", fee=" + fee +
-                ", name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                '}';
+        return "Student[Person[Name="+super.getName()+",address="+super.getAddress()+"],Program="+this.program+",year="+this.year+",fee="+this.fee+"]";
     }
 }
 
