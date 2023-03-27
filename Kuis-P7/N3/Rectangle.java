@@ -1,6 +1,6 @@
 public class Rectangle extends Shape{
-    double width;
-    double lenght;
+    private double width;
+    private double lenght;
 
     public Rectangle(){
 
