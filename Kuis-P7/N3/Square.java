@@ -1,6 +1,11 @@
 public class Square extends Rectangle{
 
     public Square() {
+        super("red", true, 1.0, 1.0);
+    }
+
+    public Square(double side) {
+        super("red", true, side, side);
     }
 
     public Square(String color, boolean filled, double width, double lenght) {
@@ -8,18 +13,15 @@ public class Square extends Rectangle{
     }
 
     public void setWidth(double width) {
-        this.width = width;
+        super.setWidth(width);
     }
+  
     public void setLenght(double lenght) {
-        this.lenght = lenght;
+        super.setLenght(lenght);
     }
 
-
-    @Override
     public String toString() {
-        return "Square{" +
-                "width=" + width +
-                ", lenght=" + lenght +
-                '}';
+        return "Square["+super.toString()+"], width="+super.getWidth()+",length="+super.getLenght()+"]]";
     }
 }
+
