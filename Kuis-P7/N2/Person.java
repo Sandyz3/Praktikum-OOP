@@ -1,10 +1,6 @@
 public class Person {
-    String name;
-    String address;
-
-    public Person() {
-
-    }
+    private String name;
+    private String address;
 
     public Person(String name, String address) {
         this.name = name;
@@ -12,22 +8,18 @@ public class Person {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public String getAddress() {
-        return address;
+        return this.address;
     }
 
-    public void setAddress(String address) {
+    public void setAdsresss(String address) {
         this.address = address;
     }
 
-    @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                '}';
+        return "Person[Name="+this.name+",Address="+this.address+"]";
     }
 }
