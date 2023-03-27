@@ -41,11 +41,7 @@ public class Rectangle extends Shape{
 
     @Override
     public String toString() {
-        return "Rectangle{" +
-                "width=" + width +
-                ", lenght=" + lenght +
-                ", color='" + color + '\'' +
-                ", filled=" + filled +
-                '}';
+        return "Rectangle[Shape[color="+ super.getColor()+",filled="+super.isFilled()+"],width="+this.width+"length="+this.lenght+"]";
     }
+    
 }
