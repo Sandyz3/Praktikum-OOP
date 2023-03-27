@@ -30,10 +30,7 @@ public class Circle3 extends Shape{
 
     @Override
     public String toString() {
-        return "Circle3{" +
-                "radius=" + radius +
-                ", color='" + color + '\'' +
-                ", filled=" + filled +
-                '}';
+        return "Circle["+super.toString()+"],radius="+ this.radius+"]";
     }
+    
 }
